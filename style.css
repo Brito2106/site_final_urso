@@ -1,8 +1,10 @@
+body{
+    background-color: lightgray;
+}
 *{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    background-color: lightgray;
 }
 #Cabecalho{
     margin: 0%;
@@ -18,7 +20,7 @@
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     justify-content: center;
 }
-#Urso-Pardo{
+#Urso{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 20px;
     text-align: start;
@@ -27,72 +29,37 @@
     margin-right: 50px;
     box-sizing: border-box;
     border: 2px solid black;
-    min-height: 265px;
     background-color: white;
-}
-#Urso-Negro{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 20px;
-    text-align: start;
-    margin-top: 5px;
-    margin-left: 50px;
-    margin-right: 50px;
-    box-sizing: border-box;
-    border: 2px solid black;
-    min-height: 315px;
-    background-color: white;
+    padding: 6px;
 }
 p{
-    margin-top: 5px;
-    margin-right: 5px;
     margin-bottom: 20px;
     background-color: white;
 }
-#Botao1{
+#Botao{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 20px;
     box-sizing:border-box;
     height:25px;
-    width:75px;
-    border: 2px solid black;
+    min-width:75px;
     text-align: center;
-    margin-left: 50%;;
-    margin-right: 50%;
-    margin-bottom: 5px;
 }
-#Botao2{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 20px;
-    box-sizing:border-box;
-    height:25px;
-    width:75px;
-    border: 2px solid black;
-    text-align: center;
-    margin-left: 50%;
-    margin-right: 50%;
-    margin-bottom: 5px;
+#Botao button {
+    padding: 4px;
 }
-#pardo1{
+
+#IMG-Urso{
     height: 250px;
-    width: 450px;
+    width: 318px;
     border: 2px solid black;
     justify-items: left;
     float: left;
-    display:block;
-    margin-left: 5px;
-    margin-right: 10px;
-    margin-top: 5px;
+    margin-right: 6px;
 }
-#negro1{
-    height: 300px;
-    width: 450px;
-    border: 2px solid black;
-    justify-items: left;
-    float: left;
-    display:block;
-    margin-left: 5px;
-    margin-right: 10px;
-    margin-top: 5px;
+.IMG-Urso-right{
+    float: right !important;
+    margin-left: 6px;
+    margin-right: 0px !important;
 }
 #img-rodape{
     height: 130px;
@@ -119,4 +86,47 @@ p{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+@media screen and (max-width: 327px){
+    #Cabecalho{
+        margin: 0%;
+        padding: 0%;
+        border: 1px solid black;
+        height: 100px;
+        width: 100%;
+        background-image: url(IMG/Fundo/densa-floresta-de-pinheiros-na-nevoa-da-manha-floresta-de-pinheiros-nevoenta_74782-339.jpg);
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        font-size: 75px;
+        font-family:'Times New Roman', Times, serif;
+        justify-content: center;
+    }
+    #Urso{
+        font-family:'Times New Roman', Times, serif;
+        font-size: 15px;
+        text-align: justify;
+        margin-top: 5px;
+        margin-left: 25px;
+        margin-right: 25px;
+        box-sizing: border-box;
+        border: 2px solid black;
+        min-height: 265px;
+        background-color: white;
+    }
+    #IMG-Urso{
+        height: 157px;
+        width: 200px;
+        border: 2px solid black;
+        justify-items: left;
+        float: none;
+        margin-left: 5px;
+        margin-right: 10px;
+        margin-top: 5px;
+    }
+    .IMG-Urso-right{
+        float: none !important;
+        margin: 0px !important;
+    }
+
 }
